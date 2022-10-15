@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #1a1e2b;
+  --color-2: #4ecbd4;
+  --color-3: #a977cc;
+  --color-4: #663d8c;
+}
+
+body {
+  background: #1a1e2b;
+  overflow: hidden;
+  cursor: none;
+}
+
+canvas {
+  position: absolute;
+}
+
+.controls {
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="controls">
+      <label for="neuronsAmount" id="neuronsAmountLabel">Liczba punktów</label>
+      <input
+        type="range"
+        name="neuronsAmount"
+        id="neuronsAmount"
+        min="1"
+        max="500"
+      />
+      <label for="neuronsDistance" id="neuronsDistanceLabel"
+        >Maksymalny dystans</label
+      >
+      <input
+        type="range"
+        name="neuronsDistance"
+        id="neuronsDistance"
+        min="1"
+        max="500"
+      />
+      <label for="neuronsConnections" id="neuronsConnectionsLabel"
+        >Liczba Połączeń</label
+      >
+      <input
+        type="range"
+        name="neuronsConnections"
+        id="neuronsConnections"
+        min="0"
+        max="100"
+      />
+    </div>
+    <canvas id="Scene"></canvas>
+  </body>
+</html>
