@@ -147,20 +147,20 @@ class Network {
       this.#createNeurons()
     })
     this.inputNeuronDistance.addEventListener("input", (e) => {
-      this.inputNeuronDistanceLabel.innerHTML = `Liczba punktów (${e.target.value})`
+      this.inputNeuronDistanceLabel.innerHTML = `Maksymalny dystans (${e.target.value})`
       this.maxNeuronDistance = e.target.value
     })
     this.inputNeuronConnections.addEventListener("input", (e) => {
-      this.inputNeuronConnectionsLabel.innerHTML = `Liczba punktów (${e.target.value})`
+      this.inputNeuronConnectionsLabel.innerHTML = `Liczba połączeń (${e.target.value})`
       this.maxNeuronConnections = e.target.value
     })
 
     this.inputNeuronAmount.value = this.neuronAmount
     this.inputNeuronAmountLabel.innerHTML = `Liczba punktów (${this.neuronAmount})`
     this.inputNeuronDistance.value = this.maxNeuronDistance
-    this.inputNeuronDistanceLabel.innerHTML = `Liczba punktów (${this.maxNeuronDistance})`
+    this.inputNeuronDistanceLabel.innerHTML = `Maksymalny dystans (${this.maxNeuronDistance})`
     this.inputNeuronConnections.value = this.maxNeuronConnections
-    this.inputNeuronConnectionsLabel.innerHTML = `Liczba punktów (${this.maxNeuronConnections})`
+    this.inputNeuronConnectionsLabel.innerHTML = `Liczba połączeń (${this.maxNeuronConnections})`
     // Frames
     this.#frame()
   }
